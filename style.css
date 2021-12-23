@@ -20,46 +20,59 @@ button {
 .btn-salvar {
   background: #13ce66;
   position: absolute;
-  bottom: 10px;
-  right: 10px;
+  right: 4px;
+  bottom: 4px;
 }
 .btn-Editar {
-  background: #13ce66;
+  background: #13ce67fd;
   cursor: pointer;
 }
 .btn-Excluir {
   background: #ff4949;
   cursor: pointer;
 }
-
-button:hover {
+.btn-salvar:hover {
+  background: #13ce6746;
+}
+.btn-Editar:hover {
+  background: #13ce6746;
+}
+.btn-Excluir:hover {
+  background: #ff49494f;
+}
+.btn-modal:hover {
   color: black;
-  background: white;
+  background: #6f5fff3a;
 }
-.fechar {
+.btn-fechar {
   padding: 10px;
-  position: absolute;
   cursor: pointer;
-  top: 0px;
-  right: 0px;
   border-radius: 2px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
 }
-.fechar:hover {
+.btn-fechar:hover {
   background: #ff4949;
 }
 .modal01 {
+  position: relative;
   margin: auto;
   border-radius: 2px;
-  position: absolute;
   padding: 10px;
   width: 800px;
   height: 300px;
   background-color: white;
-  display: none;
   box-shadow: 0 0 1em black;
-  grid-row: 2 /3;
-  top: 215px;
-  left: 220px;
+  margin-top: 230px;
+}
+.modal {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: none;
+  top: 0px;
+  left: 0px;
 }
 .content {
   height: 100%;

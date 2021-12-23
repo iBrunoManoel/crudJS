@@ -1,5 +1,5 @@
 function abrirModal() {
-    let modal = document.querySelector('.modal01');
+    let modal = document.querySelector('.modal');
     let backgroundC = document.querySelector('body');
     let button = document.querySelector('.btn-modal');
     let buttonEdit = Array.from(document.querySelectorAll('.btn-Editar'));
@@ -16,7 +16,7 @@ function abrirModal() {
     modal.style.display = 'block';
 }
 function fecharModal() {
-    let fechar = document.querySelector('.modal01');
+    let fechar = document.querySelector('.modal');
     let button = document.querySelector('.btn-modal');
     let backgroundC = document.querySelector('body');
     let buttonEdit = Array.from(document.querySelectorAll('.btn-Editar'));
@@ -32,6 +32,13 @@ function fecharModal() {
     fechar.style.display = 'none';
     button.style.display = 'block';
     limparCampos();
+}
+const modal = document.getElementById('modal')
+window.onclick = (event) => {
+    if(event.target == modal) {
+        modal.style.display = 'none';
+        fecharModal();
+    }
 }
 // Interaçao com layout
 
