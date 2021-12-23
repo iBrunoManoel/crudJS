@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+   <header><h1>Crud Filmes</h1></header> 
+        <main>
+            <div class="content-main">
+                <button class="btn-modal"  onclick="abrirModal()">Cadastrar</button>                
+                <table id='tabFilme' class="content">
+                    <thead>
+                        <tr class="contentStyle">
+                            <th>Nome</th>
+                            <th>Diretor</th>
+                            <th>País</th>
+                            <th>Idioma</th>
+                            <th>Ação</th>
+                        </tr>       
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+                    <div id="id01" class="modal01">
+                        <span class="fechar" onclick="fecharModal()">x</span>
+                        <header class="modal-header">
+                            <h2 id='idFilme'>Novo Filme</h2>
+                        </header>
+                            <form id='form01' class="modal-form">
+                                <input type="text" id='nome' data-index='new' class="modal-input" placeholder="Nome do filme" required>
+                                <input type="text" id='diretor' class="modal-input" placeholder="Diretor" required>
+                                <input type="text" id='country' class="modal-input" placeholder="País" required>
+                                <input type="text" id='idioma' class="modal-input" placeholder="Idioma" required>
+                            </form>
+                        <footer class="modal-footer">
+                            <button class="btn-salvar">Salvar</button>
+                        </footer>
+                    </div>
+            </div>
+        </main>                   
+</body>
+<script src="logic.js"></script>
+<script src="manDom.js"></script>
+</html>
